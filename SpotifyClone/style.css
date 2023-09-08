@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body{
+    background-color: rgb(90, 90, 90);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Josefin',sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;;
+    list-style-type: none;
+    height: 50px;
+    width: auto;
+    background-color: rgb(8, 8, 8);
+    color: whitesmoke;
+}
+nav ul li{
+    padding: 15px;
+}
+.brand img{
+    width: 50px;
+    color: rgb(0, 0, 0);
+    padding: 0 10px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.bottom{
+    position: sticky;
+    height: 80px;
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    height: 70vh;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    margin: 20px auto;
+    width: auto;
+    border-radius: 10px;
+    padding: 15px;
+    background-image: url('assets/thumbnail.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size:cover;
+}
+#progressBar{
+    width: 90vw;
+    text-align: center;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+}
+.icons button{
+    cursor: pointer;
+    padding: 5px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+.icons button:hover{
+    box-shadow: 2px 2px 10px grey;
+
+}
+.songItem{
+    height: 30px;
+    display: flex;
+    background-color: grey;
+    margin: 10px 0;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 450px;
+    
+}
+.songItem input:hover{
+    cursor: pointer;
+}
+.songItem img{
+    width: 40px;
+    border-radius: 5px;
+}
+.songItem input{
+    margin: 0 10px;
+    border-radius: 15px;
+    padding: 5px;
+    font-weight: 700;
+}
+.songItemContainer{
+    margin-top: 20px;
+    overflow-y: scroll;
+    max-height: 60vh;
+}
+.songInfo{
+    position: absolute;
+    left: 70px;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.songInfo img{
+    margin-top: 15px;
+    margin-right: 5px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.songTime{
+    margin-right: 0px;
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media (max-width : 400px) {
+    .bottom{
+        height: 100px;
+        width: 100%;
+        font-size: smaller;
+    }
+    .songInfo img{
+        display: none;
+    }
+    #progressBar{
+        width: 50vw;
+    }
+    .songInfo{
+        font-size: 10px;
+        
+    }
+}
